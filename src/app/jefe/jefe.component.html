@@ -1,0 +1,10 @@
+<div>
+    <h2>Jefe de la Fábrica</h2>
+    <p>Orden del Jefe: {{ ordenDelJefe }}</p>
+    <app-empleado [ordenDelJefe]="ordenDelJefe" (respuestaDelEmpleado)="recibirRespuesta($event)"></app-empleado>
+    <h3>Respuestas de los empleados:</h3>
+    <ul>
+      <li *ngFor="let respuesta of respuestas">{{ respuesta }}</li>
+    </ul>
+  </div>
+  
